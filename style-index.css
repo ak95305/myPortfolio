@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #f8f4e3;
+  overflow: hidden;
+}
+
+#logo {
+  width: 50px;
+  height: 55px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 500px;
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
+  animation-name: slidedown;
+  animation-duration: 2s;
+}
+
+@keyframes slidedown {
+  from {
+    margin-top: -10px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+#intro {
+  margin-top: 200px;
+  margin-left: 100px;
+  animation-name: slide;
+  animation-duration: 1s;
+  font-family: "Alef", sans-serif;
+}
+
+@keyframes slide {
+  from {
+    margin-left: -400px;
+  }
+  to {
+    margin-left: 100px;
+  }
+}
+
+#er {
+  color: #f8f4e3;
+}
+
+#shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  animation-name: curve;
+  animation-duration: 2s;
+}
+
+@keyframes curve {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btn button {
+  border: none;
+  background-color: transparent;
+  background-color: #ffffff;
+  color: #8e2de2;
+  border-radius: 50px;
+  width: 80px;
+  height: 30px;
+}
+
+.about {
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.work a {
+  color: #000000;
+}
+
+.about a {
+  color: #ffffff;
+}
+
+.contact-box {
+  position: absolute;
+  top: 0;
+  right: -220px;
+  width: 220px;
+  height: 100vh;
+  background-color: #00000096;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.cross button {
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.contact-list {
+  margin-top: 50px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 25px;
+  list-style: none;
+  color: #ffffff;
+}
+
+.fa-whatsapp {
+    color: #00ffe1
+}
+
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fa-phone-alt {
+    color: #808080;
+}
+
+.contact-list li {
+    padding-bottom: 20px;
+}
+

@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #f8f4e3;
+    overflow: hidden;
+}
+
+#logo {
+    width: 50px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    width: 500px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+    animation-name: slidedown;
+    animation-duration: 2s;
+}
+
+@keyframes slidedown {
+    from{margin-top: -10px; opacity: 0;}
+    to{margin-top: 0px; opacity: 1;}
+}
+
+.btn button {
+    border: none;
+    background-color: transparent;
+    background-color: #8E2DE2;
+    color: #ffffff;
+    border-radius:50px;
+    width: 80px;
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.work a {
+    color: #000000;
+}
+
+.about {
+    padding-bottom: 8px;
+    width: 50px;
+    text-align: center;
+    animation-name: border;
+    animation-duration: 0.5s;
+    border-bottom: 3px solid #8E2DE2;
+}
+
+@keyframes border {
+    from {border-bottom: 0px solid #8E2DE2;}
+    to {border-bottom: 3px solid #8E2DE2;}
+}
+
+.about-section {
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+#text1 {
+    animation: anime 1s linear;
+    padding-bottom: 20px;
+}
+
+#text2 {
+    animation: anime 2s ease-in;
+    padding-bottom: 20px;
+}
+
+#text3 {
+    animation: anime 3s ease-in;
+    padding-bottom: 20px;
+}
+
+#text4 {
+    animation: anime 3.5s ease-in;
+    padding-bottom: 20px;
+}
+
+#text5 {
+    animation: anime 4s ease-in;
+    padding-bottom: 20px;
+}
+
+@keyframes anime {
+    from{width: 0px; padding-bottom: 0;}
+    to{width: 500px; padding-bottom: 20px;}
+
+}
+
+.contact-box {
+    position: absolute;
+    top: 0;
+    right: -220px;
+    width: 220px;
+    height: 100vh;
+    background-color: #00000096;
+  }
+  
+  .btn {
+      cursor: pointer;
+  }
+  
+  .cross button {
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+  }
+  
+  .contact-list {
+    margin-top: 50px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 25px;
+    list-style: none;
+    color: #ffffff;
+  }
+  
+  .fa-whatsapp {
+      color: #00ffe1
+  }
+  
+  .fa-instagram {
+      color: transparent;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      background-clip: text;
+      -webkit-background-clip: text;
+  }
+  
+  .fa-phone-alt {
+      color: #808080;
+  }
+  
+  .contact-list li {
+      padding-bottom: 20px;
+  }
+  
+  
+
