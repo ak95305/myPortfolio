@@ -178,6 +178,10 @@ a {
     overflow: hidden;
   }
 
+  .work a{
+    color: white;
+  }
+
   #menu-btn {
     cursor: pointer;
   }
