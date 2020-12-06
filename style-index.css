@@ -180,6 +180,10 @@ a {
     height: 100vh;
   }
 
+  #intro {
+    margin-left: 0px;
+  }
+  
   .work a{
     color: white;
   }
