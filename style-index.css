@@ -174,10 +174,11 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    overflow: hidden;
-    width: 100vh;
-    height: 100vh;
+  #main {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    overflow-x: hidden;
   }
 
   #intro {
